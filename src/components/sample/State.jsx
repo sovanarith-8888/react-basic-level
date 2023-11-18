@@ -6,7 +6,7 @@ const CounterOne = (props) => {
   }
   return (
     <div className=''>
-      <button className='btn-primary' onClick={increment}>+</button>
+      <button className='btn-primary' onClick={increment}>+ Increment</button>
     </div>
   )
 }
