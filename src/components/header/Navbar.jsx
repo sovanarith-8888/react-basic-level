@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 
 const NavbarNav = () => {
+  const [navbar, setNavbar] = useState([
+    {
+      title: "Home",
+      url: "/",
+      active: true
+    },
+    {
+      title: "About",
+      url: "/about",
+      active: true
+    },
+    {
+      title: "Service",
+      url: "service",
+      active: true
+    }
+  ])
   return (
     <>
     <Navbar rounded className='bg-slate-700 text-slate-300 py-6'>
