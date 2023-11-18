@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root{
+  font-size: 62.5%;
+  /* FONT SIZE VARIABLE */
+  --TITLE_FONT_REGULAR: 3.5rem;
+  --SUBTITLE_FONT_REGULAR: 2.9rem;
+  --NORMAL_FONT_REGULAR: 1.5rem;
+  --SMALL_FONT_REGULAR: 1.3rem;
+  /* FONT WEIGHT VARIABLE */
+  --FONT_WEIGHT_REGULAR: 300;
+  --FONT_WEIGHT_MEDUIM: 500;
+  --FONT_WEIGHT_BOLD: 700;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--FONT_WEIGHT_REGULAR);
+  color: #404f63;
+}
+span,p,a,button,input,li{
+  font-size: var(--NORMAL_FONT_REGULAR);
+  font-weight: var(--FONT_WEIGHT_REGULAR);
+}
+h1{
+  font-size: var(--TITLE_FONT_REGULAR);
+}
+h2{
+  font-size: var(--SUBTITLE_FONT_REGULAR);
+}
+.box{
+  margin: auto;
+  margin-top: 4rem;
+  width: 40%;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  background-color: #c7d2fe;
+}
+.btn-primary{
+  background-color: #404f63;
+  padding: 0.5rem 3rem;
+  color: aliceblue;
+  font-weight: var(--FONT_WEIGHT_MEDUIM);
+  letter-spacing: 0.1rem;
+  border-radius: 0.4rem;
+  border-bottom: 0.2rem solid #6366f1;
+}
